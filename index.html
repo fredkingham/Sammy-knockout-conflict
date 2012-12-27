@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="knockout-2.2.0.js" type="text/javascript"></script>   
+<script src="sammy.js" type="text/javascript"></script>   
+</head>
+<body>
+without sammy route and knockout route
+<div data-bind="text: hello"></div>
+<form action="post.html">
+<input type="submit">Go </input>
+</form>
+
+with Sammy without knockouw
+<form method="POST" action="withSammy.html">
+<input type="submit">Go </input>
+</form>
+
+
+without Sammy without knockout and True
+<form method="POST" data-bind="submit: withTrue" action="post.html">
+<input type="submit">Go </input>
+</form>
+
+
+without Sammy without knockout and False
+<form method="POST" data-bind="submit: withoutTrue" action="post.html">
+<input type="submit">Go </input>
+</form>
+
+
+with Sammy and with knockout false
+<form data-bind="submit: withoutTrue" method="POST" action="withSammy.html">
+<input type="submit">Go </input>
+</form>
+
+
+<script src="modelPageView.js" type="text/javascript"></script>   
+</body>
+</html>
